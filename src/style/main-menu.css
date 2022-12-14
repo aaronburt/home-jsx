@@ -1,0 +1,44 @@
+.main {
+    @apply small:flex-none small:mb-0
+    tablet:flex w-full 
+    mx-auto min-h-screen 
+    hover:break-words;
+}
+
+.main div.primary {
+    @apply small:w-11/12 rounded-xl my-auto
+    mx-auto 
+    tablet:w-full
+    laptop:w-11/12
+    desktop:w-10/12;
+}
+
+div.content-container {
+    @apply w-full flex flex-wrap justify-center
+    mx-auto p-3 h-auto select-none; 
+}
+
+div.container-item {
+    @apply w-[300px] h-[100px] grid grid-cols-3 backdrop-blur-sm
+    mx-1 my-1 p-[var(--content-item-padding)] rounded-lg 
+    bg-white dark:bg-slate-600
+    shadow-2xl
+    bg-opacity-70 dark:bg-opacity-70 
+    hover:bg-opacity-60 hover:dark:bg-opacity-60
+    text-black dark:text-white;
+}
+
+div.container-item:active {
+    @apply scale-95;
+}
+
+div.container-item .text {
+    @apply leading-[calc(var(--container-item-height)-1.5rem)] 
+    col-span-2 text-left inline-block text-[1.02rem]
+    max-w-[175px] max-h-[calc(var(--container-item-height)-1.5rem)] 
+    text-ellipsis whitespace-nowrap overflow-hidden;
+}
+
+div.container-item img {
+    @apply h-[calc(var(--container-item-height)-2.5rem)] m-[0.5rem] w-auto absolute;
+}
