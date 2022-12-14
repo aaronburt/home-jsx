@@ -24,7 +24,7 @@ div.container-item {
     bg-white dark:bg-slate-600
     shadow-2xl
     bg-opacity-70 dark:bg-opacity-70 
-    hover:bg-opacity-60 hover:dark:bg-opacity-60
+    hover:bg-opacity-90 hover:dark:bg-opacity-90
     text-black dark:text-white;
 }
 
