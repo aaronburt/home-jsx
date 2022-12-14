@@ -10,7 +10,7 @@ function Content(){
     return (
         <main className="main">  
             <img src="https://wallpaper.streamsave.xyz/embed.jpg" 
-            className="w-full h-full fixed opacity-0 transition-opacity object-cover blur" id="full" onLoad={opacityFull}></img>          
+            className="w-full h-full fixed opacity-0 transition-opacity object-cover" id="full" onLoad={opacityFull}></img>          
             <div className="primary">   
                 <Taskbar/>
                 <FooterFab/>
